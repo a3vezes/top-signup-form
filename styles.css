@@ -1,0 +1,156 @@
+/* Utils */
+:root {
+  --green-main: #596d48;
+  --grey-border: #e5e7eb;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Utils */
+
+/* Sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background: #333 url(./assets/trees.jpg) no-repeat center center/cover;
+  color: #fff;
+  flex: 1;
+
+  padding: 7rem 0 1rem 0;
+}
+
+.sidebar p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: auto;
+}
+
+.sidebar p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sidebar .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  margin-bottom: auto;
+}
+
+.sidebar .logo-container img {
+  width: 5rem;
+  height: 6rem;
+  color: red;
+}
+
+.sidebar .logo-container h1 {
+  font-family: Skranji;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/* Sidebar */
+
+/* Main */
+.main {
+  flex: 1;
+  background-color: #f2f2f2;
+}
+
+.main header {
+  padding: 5rem 2rem 4rem 2rem;
+}
+
+.main header h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  max-width: 50%;
+
+  line-height: 1;
+}
+
+.main header h3 + h3 {
+  margin-top: 1rem;
+}
+
+.main form {
+}
+
+.main .form-container {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.main .form-container h3 {
+  font-size: 1.5rem;
+}
+
+.main .form-container fieldset {
+  display: flex;
+}
+
+.main .form-container fieldset div {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.main .form-container fieldset div label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.55rem;
+  letter-spacing: 1px;
+}
+
+.main .form-container fieldset div input {
+  border: 1px solid var(--grey-border);
+  border-radius: 5px;
+  padding: 0.3rem;
+  width: 200px;
+}
+
+.main .form-container fieldset div input:focus {
+  border-color: steelblue;
+}
+.main .form-container fieldset div input:invalid {
+  border-color: red;
+}
+
+.main footer {
+  padding: 2rem 2rem;
+}
+
+.main footer button[type='submit'] {
+  display: inline-block;
+  background: var(--green-main);
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.main footer button[type='submit']:hover {
+  filter: brightness(1.2);
+}
+
+.main footer p span {
+  cursor: pointer;
+  color: var(--green-main);
+}
+
+/* Main */
